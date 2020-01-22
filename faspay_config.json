@@ -1,0 +1,45 @@
+{
+  "app": {
+    "name": "faspay",
+    "debug": true,
+    "host": "localhost:8085",
+    "secret": ""
+  },
+  "sentry"    : "",
+  "logfile"   : "/home/ashok/workspace/src/faspay/log/faspay_log.log",  
+  "database"  : {
+      "host"    : "localhost",
+      "port"    : 5432,
+      "user"    : "postgres",
+      "pass"    : "postgres",
+      "name"    : "faspay_db"
+  },
+
+  "faspay": {
+    "merchant_id": "Paxel",
+    "base_url": "https://dev2.faspay.co.id/account/api/",
+    "tokens": "tokens",
+    "register": "register",
+    "confirm": "register/confirm",
+    "transfer": "transfer"
+  },
+
+  "faspay_keys": {
+    "merchant_id": "Ashok",
+    "merchant_virtual_account": "Ashok",
+    "Faspay_Key": "111",
+    "Faspay_Secret": "222",
+    "APP_Key": "333",
+    "APP_Secret": "444",
+    "Client_Key":"555",
+    "Client_Secret": "666",
+    "IV":"777"
+  },
+
+  "faspay_key_gen_urls": {
+    "base_url": "https://dev2.faspay.co.id/post_fpg/auth/",
+    "authorization": "authorization.php",
+    "access_token": "access_token.php",
+    "signature": "signature.php"
+  }
+}
